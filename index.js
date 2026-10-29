@@ -1,53 +1,81 @@
-// Select the menu button and navigation links
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
 
-// Mobile navigation menu
-if (menuToggle && navLinks) {
-    menuToggle.setAttribute('aria-expanded', 'false');
+    if (!menuToggle || !navLinks) {
+        console.error("Hamburger button or navigation menu not found.");
+        return;
+    }
 
-    menuToggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('active');
+    const navIcon = menuToggle.querySelector("i");
 
-        menuToggle.setAttribute('aria-expanded', isOpen);
+    // Open and close the hamburger menu
+    function toggleMenu() {
+        const isOpen = navLinks.classList.toggle("show");
 
+        menuToggle.setAttribute("aria-expanded", isOpen);
         menuToggle.setAttribute(
-            'aria-label',
-            isOpen ? 'Close navigation menu' : 'Open navigation menu'
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
         );
-    });
 
-    // Close the menu when a navigation link is clicked
-    navLinks.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            menuToggle.setAttribute('aria-expanded', 'false');
-            menuToggle.setAttribute('aria-label', 'Open navigation menu');
+        if (navIcon) {
+            navIcon.classList.toggle("fa-bars", !isOpen);
+            navIcon.classList.toggle("fa-xmark", isOpen);
+        }
+    }
+
+    // Hamburger button click
+    menuToggle.addEventListener("click", toggleMenu);
+
+    // Close menu after clicking a navigation link
+    navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            closeMenu();
         });
     });
 
-    // Close the menu when Escape is pressed
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
-            navLinks.classList.remove('active');
-            menuToggle.setAttribute('aria-expanded', 'false');
-            menuToggle.setAttribute('aria-label', 'Open navigation menu');
+    function closeMenu() {
+        navLinks.classList.remove("show");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+        if (navIcon) {
+            navIcon.classList.remove("fa-xmark");
+            navIcon.classList.add("fa-bars");
+        }
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (event) => {
+        if (
+            navLinks.classList.contains("show") &&
+            !navLinks.contains(event.target) &&
+            !menuToggle.contains(event.target)
+        ) {
+            closeMenu();
         }
     });
 
-    // Close the mobile menu when returning to desktop
-    window.addEventListener('resize', () => {
+    // Close menu with Escape key
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+    });
+
+    // Close menu when returning to desktop screen size
+    window.addEventListener("resize", () => {
         if (window.innerWidth > 768) {
-            navLinks.classList.remove('active');
-            menuToggle.setAttribute('aria-expanded', 'false');
+            closeMenu();
         }
     });
-}
 
+    // Update copyright year automatically
+    const currentYear = document.getElementById("currentYear");
 
-// Automatically update the copyright year
-const currentYear = document.querySelector('#year');
-
-if (currentYear) {
-    currentYear.textContent = new Date().getFullYear();
-}
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+})
