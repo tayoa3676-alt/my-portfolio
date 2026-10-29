@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>Adetayo | Frontend Developer Portfolio</title>
+
+<meta
+  name="description"
+  content="Explore Adetayo's frontend developer portfolio, featuring web development projects built with HTML, CSS, JavaScript, and React."
+/>
+
+<meta name="author" content="Adetayo" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Adetayo | Frontend Developer Portfolio" />
+<meta
+  property="og:description"
+  content="Explore my web development projects and frontend skills in HTML, CSS, JavaScript, and React."
+/>
+<meta property="og:image" content="/preview.png" />
+<meta property="og:image:alt" content="Adetayo's frontend developer portfolio" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Adetayo | Frontend Developer Portfolio" />
+<meta
+  name="twitter:description"
+  content="Explore my frontend development projects and skills."
+/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar container">
+        <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span>Adetayo<span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-contact">
+            Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+        <div class="container hero-container">
+
+            <div class="hero-content">
+                <p class="availability">
+                    <span class="status-dot"></span>
+                    AVAILABLE FOR PROJECTS
+                </p>
+
+                <p class="hero-greeting">Hello, I'm Adetayo</p>
+
+                <h1>
+                    I build websites
+                    <span class="gradient-text">that make an impact.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I'm a frontend developer focused on building modern,
+                    responsive, and user-friendly websites that help businesses
+                    grow online.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Let's Work Together
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <span>Find me on</span>
+
+                    <a href="https://github.com/tayoa3676-alt"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-top">
+                        <div class="window-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <p>developer.js</p>
+                    </div>
+
+                    <div class="code-preview">
+                        <p><span class="code-purple">const</span> developer = {</p>
+                        <p class="code-indent">name: <span class="code-green">"Adetayo"</span>,</p>
+                        <p class="code-indent">role: <span class="code-green">"Frontend Developer"</span>,</p>
+                        <p class="code-indent">skills: [</p>
+                        <p class="code-indent code-indent-2"><span class="code-green">"HTML"</span>,</p>
+                        <p class="code-indent code-indent-2"><span class="code-green">"CSS"</span>,</p>
+                        <p class="code-indent code-indent-2"><span class="code-green">"JavaScript"</span></p>
+                        <p class="code-indent">],</p>
+                        <p class="code-indent">passion: <span class="code-green">"Building for the web"</span></p>
+                        <p>};</p>
+                        <p class="code-comment">// Turning ideas into reality.</p>
+                    </div>
+
+                    <div class="hero-card-footer">
+                        <span><i class="fa-solid fa-circle-check"></i> Ready to build</span>
+                        <span>v1.0</span>
+                    </div>
+                </div>
+
+                <div class="floating-badge badge-html">
+                    <i class="fa-brands fa-html5"></i> HTML
+                </div>
+
+                <div class="floating-badge badge-css">
+                    <i class="fa-brands fa-css3-alt"></i> CSS
+                </div>
+
+                <div class="floating-badge badge-js">
+                    <i class="fa-brands fa-js"></i> JavaScript
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-bottom container">
+            <p>SCROLL TO DISCOVER</p>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">GET TO KNOW ME</p>
+                <h2>More than just <span class="gradient-text">writing code.</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I enjoy turning ideas into digital experiences
+                        that are useful, attractive, and easy to navigate.
+                    </p>
+
+                    <p>
+                        My focus is frontend development, where design meets
+                        functionality. I build websites with clean layouts,
+                        responsive interfaces, and attention to detail.
+                    </p>
+
+                    <p>
+                        I'm continually improving my skills and looking for
+                        opportunities to work on meaningful projects with
+                        individuals and businesses.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Have a project in mind?
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Clean Code</h3>
+                        <p>Organized, readable, maintainable code.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Websites built for phones and computers.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Performance</h3>
+                        <p>Fast, smooth, and practical experiences.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3>Creative Thinking</h3>
+                        <p>Thoughtful solutions to design challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">MY TOOLKIT</p>
+                <h2>Skills & <span class="gradient-text">technologies.</span></h2>
+                <p class="section-subtitle">
+                    The tools I use to bring ideas to life on the web.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic structure</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Styling & layouts</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interactive websites</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                    <p>Component-based UI</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git</h3>
+                    <p>Version control</p>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Code hosting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">SELECTED WORK</p>
+                <h2>Projects I've <span class="gradient-text">worked on.</span></h2>
+                <p class="section-subtitle">
+                    A selection of projects demonstrating my development skills.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1 -->
+                <article class="project-card">
+                    <div class="project-image project-image-1">
+                        <img
+                            class="project-screenshot"
+                            src="Assets/Screenshot 2026-10-29 174614.png"
+                            alt="EduSity educational "
+                            loading="lazy"
+                        >
+                        <span class="project-category">Education</span>
+                    </div>
+
+                    <div class="project-info">
+                        <p class="project-number">PROJECT 01</p>
+                        <h3>EduSity</h3>
+                        <p>
+                            An educational website concept designed to present
+                            learning programs and campus information.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>CSS</span>
+                            <span>Responsive Design</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://edusity-seven-iota.vercel.app"
+                               target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="https://github.com/tayoa3676-alt/eduSity"
+                               target="_blank" rel="noopener noreferrer">
+                                Source Code <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+                    <div class="project-image project-image-2">
+                        <img
+                            class="project-screenshot"
+                            src="./Assets/barber.png"
+                            alt="Lux Barbing Saloon "
+                            loading="lazy"
+                        >
+                        <span class="project-category">Business</span>
+                    </div>
+
+                    <div class="project-info">
+                        <p class="project-number">PROJECT 02</p>
+                        <h3>Lux Barbing Saloon</h3>
+                        <p>
+                            A barbershop website concept featuring service
+                            information, pricing, and appointment details.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://lux-six-theta.vercel.app/" target="_blank">
+                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/tayoa3676-alt/Lux-Barbing-Saloon" target="_blank">
+                                Source Code <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3 -->
+                <article class="project-card">
+                    <div class="project-image project-image-3">
+                        <img
+                            class="project-screenshot"
+                            src="images/gracera-bakes.png"
+                            alt="Gracera Bakes and Troves website screenshot"
+                            loading="lazy"
+                        >
+                        <span class="project-category">Food & Bakery</span>
+                    </div>
+
+                    <div class="project-info">
+                        <p class="project-number">PROJECT 03</p>
+                        <h3>Gracera Bakes & Troves</h3>
+                        <p>
+                            A bakery website concept showcasing cakes, pastries,
+                            special packages, and ordering information.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#">
+                                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="#">
+                                Source Code <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="projects-cta">
+                <p>Interested in working together?</p>
+                <a href="#contact" class="btn btn-secondary">
+                    Let's discuss your project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <p class="section-label">WHAT I CAN DO</p>
+                <h2>Services built around <span class="gradient-text">your needs.</span></h2>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-window-maximize"></i></div>
+                    <h3>Business Websites</h3>
+                    <p>Professional websites that help businesses showcase their services and build an online presence.</p>
+                    <span class="service-index">01</span>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-rectangle-ad"></i></div>
+                    <h3>Landing Pages</h3>
+                    <p>Focused landing pages designed to communicate your message and guide visitors toward an action.</p>
+                    <span class="service-index">02</span>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Websites that adapt to mobile phones, tablets, laptops, and desktop screens.</p>
+                    <span class="service-index">03</span>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                    <h3>Website Redesign</h3>
+                    <p>Improvements to existing website layouts, usability, presentation, and responsiveness.</p>
+                    <span class="service-index">04</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-content">
+                    <p class="section-label">LET'S CONNECT</p>
+                    <h2>Have a project? <span class="gradient-text">Let's build it.</span></h2>
+
+                    <p>
+                        Have an idea for a website or need help improving your
+                        online presence? Tell me about it, and let's explore
+                        how I can help.
+                    </p>
+
+                    <a href="mailto:tayoa3676@gmail.com" class="btn btn-primary">
+                        <i class="fa-solid fa-envelope"></i>
+                        Send Me an Email
+                    </a>
+                </div>
+
+                <div class="contact-details">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tayoa3676@gmail.com"class="contact-item">
+                        <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span>
+                            <small>Email me</small>
+                            <strong>tayoa3676@gmail.com</strong>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a href="https://wa.me/2349033258245" class="contact-item">
+                        <span class="contact-icon"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span>
+                            <small>Message me</small>
+                            <strong>WhatsApp</strong>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a href="https://github.com/tayoa3676-alt"
+                       target="_blank" rel="noopener noreferrer"
+                       class="contact-item">
+                        <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+                        <span>
+                            <small>Explore my code</small>
+                            <strong>GitHub</strong>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-container">
+        <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span>Adetayo<span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <p>Designed and built with care by Adetayo.</p>
+
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <div class="container footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Adetayo. All rights reserved.</p>
+        <p>Built with HTML, CSS & JavaScript.</p>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
